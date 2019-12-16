@@ -1,0 +1,287 @@
+@charset "utf-8"
+
+html
+{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+body
+{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+header
+{
+	margin: 0px;
+	padding: 0px;
+	height: 18vh;
+	background-color: #A9A9A9;
+	box-sizing: border-box;
+}
+
+#burger
+{
+	display: none;
+	height: 10vh;
+}
+
+#dlf
+{
+	display: none;
+}
+
+#dlo
+{
+	display: none;
+}
+
+#hidden1
+{
+	display: none;
+}
+
+#logo
+{
+	height: 13vh;
+	margin: auto;
+	display: block;
+}
+
+div
+{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+.menulink
+{
+	text-decoration: none;
+	color: #C0C0C0;
+}
+
+nav
+{
+	margin: 0px;
+	padding: 0px;
+	height: 7vh;
+	box-sizing: border-box;
+}
+
+.menubutton
+{
+	width: 25%;
+	height: 5vh;
+	float: left;
+	text-align: center;
+	line-height: 5vh;
+	box-sizing: border-box;
+	position: relative;
+	border: solid 1px #A9A9A9;
+	background-color: black;
+	transition: height linear 0.2s;
+}
+
+.submenucontainer div
+{
+	border: solid 1px #A9A9A9;
+}
+
+.menulink:hover
+{
+	color: #DCDCDC;
+}
+
+.submenucontainer
+{
+	width: 100%;
+	overflow: hidden;
+	height: 0px;
+	position: absolute;
+	top: 5vh;
+	box-sizing: border-box;
+	transition: height linear 0.2s;
+	background-color: black;
+}
+
+@media screen and (min-width: 1280px)
+{
+	.menubutton:hover .submenucontainer
+	{
+		height: 20vh;
+	}
+}
+
+@media screen and (max-width: 800px)
+{	
+	.submenucontainer
+	{
+		overflow: hidden;
+		height: 0px;
+		position: static;
+		box-sizing: border-box;
+		transition: height linear 0.2s;
+		background-color: black;
+	}
+	
+	header
+	{
+		height: 10vh;
+	}
+	
+	#burger
+	{
+		height: 10vh;
+	}
+	
+	#logo
+	{
+		height: 10vh;
+	}
+	
+	#df
+	{
+		width: 50%;
+		position: fixed;
+		right: -50%;
+		top: 0px;
+		transition: right linear 0.2s;
+		height: auto;
+	}
+	
+	#burger
+	{
+		display: block;
+		position: absolute;
+		right: 50vw;
+	}
+	
+	#dlo
+	{
+		height: 10vh;
+		width: 10vh;
+		position: absolute;
+		right: 50vw;
+		display: block;
+	}
+	
+	#dlf
+	{
+		height: 10vh;
+		width: 10vh;
+		position: absolute;
+		right: 50vw;
+	}
+	
+	#dlf
+	{
+		display: none;
+	}
+	
+	#do:target #df
+	{
+		right: 0px;
+	}
+	
+	#do:target #dlo
+	{
+		display: none;
+	}
+	
+	#do:target #dlf
+	{
+		display: block;
+	}
+	
+	#df:target
+	{
+		right: -50%;
+	}
+	
+	#df:target #dlo
+	{
+		display: block;
+	}
+	
+	#df:target #dlf
+	{
+		display: none;
+	}
+	
+	#mo1:target #df
+	{
+		right: 0px;
+	}
+	
+	#mo1:target #dlo
+	{
+		display: none;
+	}
+	
+	#mo1:target #dlf
+	{
+		display: block;
+	}
+	
+	#mo1:target #submenucontainer1
+	{
+		height: 16vh;
+	}
+	
+	#mo1:target #menubutton1
+	{
+		height: 21vh;
+	}
+	
+	#mo1:target #hidden1
+	{
+		display: inline;
+	}
+	
+	#mo1:target #hidden2
+	{
+		display: none;
+	}
+	
+	#mf1:target #df
+	{
+		right: 0px;
+	}
+	
+	#mf1:target #dlo
+	{
+		display: none;
+	}
+	
+	#mf1:target #dlf
+	{
+		display: block;
+	}
+	
+	#mf1:target #submenucontainer1
+	{
+		height: 0px;
+	}
+	
+	#mf1:target #menubutton1
+	{
+		height: 4vh;
+	}
+	
+	nav
+	{
+		height: auto;
+	}
+	
+	.menubutton
+	{
+		float: none;
+		width: 100%;
+		line-height: 4vh;
+		transition: height linear 0.2s;
+	}
+}
