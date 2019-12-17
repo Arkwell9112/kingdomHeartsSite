@@ -1,0 +1,96 @@
+@font-face
+{
+  font-family: 'Kingdom';
+  src: url('../font/kingdom.woff') format('woff'), url('../font/kingdom.woff2') format('woff2');
+  font-size: normal;
+  font-weight: normal;
+}
+
+*
+{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+#container
+{
+  max-width: 1280px;
+  margin: auto;
+}
+
+body
+{
+  background-image: url(../img/fond.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+iframe
+{
+  width: 65%;
+  height: 32vw;
+  max-height: 410px;
+  margin: auto;
+  margin-top: 30px;
+  display: block;
+}
+
+h1
+{
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 30px;
+  font-family: 'Kingdom', 'Garamond';
+  font-size: 5vw;
+}
+
+blockquote
+{
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 30px;
+  font-family: 'Kingdom', 'Garamond';
+  font-size: 5vw;
+}
+
+blockquote footer
+{
+  font-size: 3vw;
+  padding-left: 55vw;
+}
+
+@media screen and (min-width: 1280px)
+{
+  h1
+  {
+    font-size: 64px;
+  }
+
+  blockquote
+  {
+    font-size: 64px;
+  }
+
+  blockquote footer
+  {
+    font-size: 39px;
+    padding-left: 700px;
+  }
+}
+
+@media screen and (max-width: 425px)
+{
+  blockquote
+  {
+    font-size: 10vw;
+  }
+
+  blockquote footer
+  {
+    font-size: 6vw;
+  }
+}

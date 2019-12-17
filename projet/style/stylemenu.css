@@ -23,6 +23,27 @@ header
 	box-sizing: border-box;
 }
 
+a
+{
+	color: #C0C0C0;
+	text-decoration: none;
+}
+
+a:active
+{
+	color: #A9A9A9;
+}
+
+a:visited
+{
+	color: #A9A9A9;
+}
+
+a:hover
+{
+	color: #DCDCDC;
+}
+
 #burger
 {
 	display: none;
@@ -44,24 +65,16 @@ header
 	display: none;
 }
 
+#hidden3
+{
+	display: none;
+}
+
 #logo
 {
 	height: 13vh;
 	margin: auto;
 	display: block;
-}
-
-div
-{
-	margin: 0px;
-	padding: 0px;
-	box-sizing: border-box;
-}
-
-.menulink
-{
-	text-decoration: none;
-	color: #C0C0C0;
 }
 
 nav
@@ -91,11 +104,6 @@ nav
 	border: solid 1px #A9A9A9;
 }
 
-.menulink:hover
-{
-	color: #DCDCDC;
-}
-
 .submenucontainer
 {
 	width: 100%;
@@ -112,12 +120,55 @@ nav
 {
 	.menubutton:hover .submenucontainer
 	{
-		height: 20vh;
+		height: 21vh;
 	}
 }
 
-@media screen and (max-width: 800px)
-{	
+@media screen and (min-width: 426px) and (max-width: 1279px)
+{
+	#mo1:target #submenucontainer1
+	{
+		height: 21vh;
+	}
+
+	#mo1:target #hidden1
+	{
+		display: inline;
+	}
+
+	#mo1:target #hidden2
+	{
+		display: none;
+	}
+
+	#mf1:target #submenucontainer1
+	{
+		height: 0px;
+	}
+
+	#mo2:target #submenucontainer2
+	{
+		height: 21vh;
+	}
+
+	#mo2:target #hidden3
+	{
+		display: inline;
+	}
+
+	#mo2:target #hidden4
+	{
+		display: none;
+	}
+
+	#mf2:target #submenucontainer2
+	{
+		height: 0px;
+	}
+}
+
+@media screen and (max-width: 425px)
+{
 	.submenucontainer
 	{
 		overflow: hidden;
@@ -127,22 +178,17 @@ nav
 		transition: height linear 0.2s;
 		background-color: black;
 	}
-	
+
 	header
 	{
 		height: 10vh;
 	}
-	
-	#burger
-	{
-		height: 10vh;
-	}
-	
+
 	#logo
 	{
 		height: 10vh;
 	}
-	
+
 	#df
 	{
 		width: 50%;
@@ -152,14 +198,17 @@ nav
 		transition: right linear 0.2s;
 		height: auto;
 	}
-	
+
 	#burger
 	{
+		height: 8vh;
+		margin-top: 1vh;
+		margin-left: 1vh;
 		display: block;
 		position: absolute;
-		right: 50vw;
+		right: 51vw;
 	}
-	
+
 	#dlo
 	{
 		height: 10vh;
@@ -168,7 +217,7 @@ nav
 		right: 50vw;
 		display: block;
 	}
-	
+
 	#dlf
 	{
 		height: 10vh;
@@ -176,107 +225,167 @@ nav
 		position: absolute;
 		right: 50vw;
 	}
-	
+
 	#dlf
 	{
 		display: none;
 	}
-	
+
 	#do:target #df
 	{
 		right: 0px;
 	}
-	
+
 	#do:target #dlo
 	{
 		display: none;
 	}
-	
+
 	#do:target #dlf
 	{
 		display: block;
 	}
-	
+
 	#df:target
 	{
 		right: -50%;
 	}
-	
+
 	#df:target #dlo
 	{
 		display: block;
 	}
-	
+
 	#df:target #dlf
 	{
 		display: none;
 	}
-	
+
 	#mo1:target #df
 	{
 		right: 0px;
 	}
-	
+
 	#mo1:target #dlo
 	{
 		display: none;
 	}
-	
+
 	#mo1:target #dlf
 	{
 		display: block;
 	}
-	
+
 	#mo1:target #submenucontainer1
 	{
 		height: 16vh;
 	}
-	
+
 	#mo1:target #menubutton1
 	{
 		height: 21vh;
 	}
-	
+
 	#mo1:target #hidden1
 	{
 		display: inline;
 	}
-	
+
 	#mo1:target #hidden2
 	{
 		display: none;
 	}
-	
+
 	#mf1:target #df
 	{
 		right: 0px;
 	}
-	
+
 	#mf1:target #dlo
 	{
 		display: none;
 	}
-	
+
 	#mf1:target #dlf
 	{
 		display: block;
 	}
-	
+
 	#mf1:target #submenucontainer1
 	{
 		height: 0px;
 	}
-	
+
 	#mf1:target #menubutton1
 	{
 		height: 4vh;
 	}
-	
+
+	#mo2:target #df
+	{
+		right: 0px;
+	}
+
+	#mo2:target #dlo
+	{
+		display: none;
+	}
+
+	#mo2:target #dlf
+	{
+		display: block;
+	}
+
+	#mo2:target #submenucontainer2
+	{
+		height: 16vh;
+	}
+
+	#mo2:target #menubutton2
+	{
+		height: 21vh;
+	}
+
+	#mo2:target #hidden3
+	{
+		display: inline;
+	}
+
+	#mo2:target #hidden4
+	{
+		display: none;
+	}
+
+	#mf2:target #df
+	{
+		right: 0px;
+	}
+
+	#mf2:target #dlo
+	{
+		display: none;
+	}
+
+	#mf2:target #dlf
+	{
+		display: block;
+	}
+
+	#mf2:target #submenucontainer2
+	{
+		height: 0px;
+	}
+
+	#mf2:target #menubutton2
+	{
+		height: 4vh;
+	}
+
 	nav
 	{
 		height: auto;
 	}
-	
+
 	.menubutton
 	{
 		float: none;
