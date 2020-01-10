@@ -1,3 +1,5 @@
+/* IDEA: On ajoute la police kingdom hearts */
+
 @font-face
 {
   font-family: 'Kingdom';
@@ -6,6 +8,8 @@
   font-weight: normal;
 }
 
+@charset "UTF-8";
+
 *
 {
   padding: 0px;
@@ -13,10 +17,27 @@
   box-sizing: border-box;
 }
 
+/* IDEA: style pour les sous titres des mondes */
+h3
+{
+  color: white;
+  font-family: 'Garamond';
+  font-size: 2vw;
+  text-align: center;
+  margin-top: 20px;
+}
+
 #container
 {
   max-width: 1280px;
   margin: auto;
+}
+
+/* IDEA: style pour les parenthéses dans la page mondes */
+span
+{
+  font-size: 1.5vw;
+  font-family: 'Garamond';
 }
 
 body
@@ -37,6 +58,7 @@ iframe
   display: block;
 }
 
+/* IDEA: style pour les titres principaux mais pas pour les titres de page */
 h1
 {
   color: white;
@@ -45,6 +67,75 @@ h1
   margin-top: 30px;
   font-family: 'Kingdom', 'Garamond';
   font-size: 5vw;
+}
+
+p
+{
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 20px;
+  font-family: 'Garamond';
+  font-size: 1.5vw;
+  margin-bottom: 20px;
+}
+
+hr
+{
+  width: 80%;
+  margin: auto;
+  height: 2px;
+  color: #DCDCDC;
+}
+
+footer
+{
+  height: 5vh;
+  background-color: black;
+  font-family: 'Garamond';
+  font-size: 1.5vw;
+  clear: both;
+}
+
+footer h6 img
+{
+  height: 5vh;
+  float: right;
+  margin: 0px;
+}
+
+footer h6
+{
+  float: left;
+  color: white;
+}
+
+/* IDEA: Style pour le footer et pour placer les divs en ligne */
+#auteur
+{
+  line-height: 5vh;
+  width: 60%;
+  text-align: center;
+}
+
+#contact
+{
+  width: 20%;
+  line-height: 5vh;
+  padding-left: 10px;
+  text-align: left;
+}
+
+#retour
+{
+  width: 20%;
+}
+
+/* IDEA: Style pour la citation de la page principale */
+blockquote footer
+{
+  background-color: transparent;
+  font-family: 'Kingdom', 'Garamond';
 }
 
 blockquote
@@ -63,11 +154,205 @@ blockquote footer
   padding-left: 55vw;
 }
 
+img
+{
+  margin: auto;
+  margin-top: 20px;
+  display: block;
+  max-width: 1280px;
+}
+
+.jacket
+{
+  height: 40vh;
+  max-height: 768px;
+}
+
+/* IDEA: Style pour les titres de page */
+#main
+{
+  font-family: 'Kingdom', 'Garamond';
+  font-size: 7vw;
+  color: white;
+}
+
+figcaption
+{
+  font-family: 'Garamond';
+  font-size: 1.5vw;
+  color: white;
+  text-align: center;
+}
+
+figure
+{
+  margin-bottom: 20px;
+}
+
+/* IDEA: Style pour le placement des images et du texte dans la page des produits et aussi dans la page des mondes */
+.figs img
+{
+  float: left;
+  margin: auto;
+  height: 25vh;
+}
+
+.figs
+{
+  width: 40vw;
+  margin: auto;
+  margin-bottom: 20px;
+  height: 25vh;
+  display: table;
+  max-height: 270px;
+  max-width: 1280px;
+}
+
+.worlds
+{
+  width: 60vw;
+  margin: auto;
+  margin-bottom: 20px;
+  height: 30vh;
+  display: table;
+  max-height: 270px;
+  max-width: 1280px;
+}
+
+.worlds p
+{
+  vertical-align: middle;
+  display: table-cell;
+}
+
+.worlds img
+{
+  float: left;
+  margin: auto;
+  height: 20vh;
+  margin-right: 10px;
+  margin-top: 5vh;
+}
+
+.figs p
+{
+  vertical-align: middle;
+  display: table-cell;
+}
+
+/* IDEA: Style pour placer les éléments du formulaire du quizz et pour placer correctement les cases à cocher */
+form
+{
+  color: white;
+  font-size: 1.5vw;
+  text-align: center;
+  font-family: 'Garamond';
+  margin-bottom: 15px;
+}
+
+textarea
+{
+  margin-bottom: 5px;
+}
+
+fieldset
+{
+  display: inline-block;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.tick
+{
+  margin-left: 20px;
+}
+
+input
+{
+  margin-bottom: 3px;
+  margin-top: 3px;
+}
+
+#subbutton
+{
+  height: 5vh;
+  width: 10vw;
+  border-radius: 4px;
+}
+
+/* IDEA: Style pour la galerie pour placer les fléches avant arrière, et pour placer l'image de la galerie */
+#image
+{
+  width: 100vw;
+}
+
+#galerie
+{
+  position: relative;
+  margin-bottom: 20px;
+}
+
+#droite
+{
+  width: 10vw;
+}
+
+#right
+{
+  position: absolute;
+  right: 0px;
+}
+
+#gauche
+{
+  width: 10vw;
+}
+
+#left
+{
+  position: absolute;
+  left: 0px;
+}
+
+.advance
+{
+  background-color: transparent;
+  border: transparent;
+}
+
+#buttons
+{
+  position: absolute;
+  bottom: 0px;
+}
+
+.button
+{
+  float: left;
+  background-color: transparent;
+  border: transparent;
+}
+
+.button img
+{
+  width: 2vw;
+}
+
 @media screen and (min-width: 1280px)
 {
+
+  /* IDEA: Style de limitation pour que les éléments de dépassents pas les 1280px pour les écrans très grands */
   h1
   {
     font-size: 64px;
+  }
+
+  #subbutton
+  {
+    max-height: 54px;
+    max-width: 128px;
   }
 
   blockquote
@@ -80,17 +365,169 @@ blockquote footer
     font-size: 39px;
     padding-left: 700px;
   }
+
+  p
+  {
+    font-size: 19.2px;
+  }
+
+  form
+  {
+    font-size: 19.2px;
+  }
+
+  figcaption
+  {
+    font-size: 19.2px;
+  }
+
+  footer
+  {
+    font-size: 19.2px;
+  }
+
+  img
+  {
+    max-width: 1280px;
+  }
+
+  #main
+  {
+    font-size: 89.6px;
+  }
+
+  .figs
+  {
+    max-width: 1280px;
+  }
+
+  .worlds
+  {
+    max-width: 1280px;
+  }
+}
+
+@media screen and (max-width: 768px)
+{
+  /* IDEA: Stype pour positionner les éléments en colonne dans les pages des mondes et des produits dérivés */
+  .figs img
+  {
+    float: none;
+    margin: inherit;
+    height: 15vh;
+  }
+
+  .worlds img
+  {
+    float: none;
+    margin: inherit;
+    height: 15vh;
+  }
+
+  .figs
+  {
+    width: auto;
+    margin: inherit;
+    margin-bottom: 20px;
+    height: auto;
+    display: block;
+  }
+
+  .worlds
+  {
+    width: auto;
+    margin: inherit;
+    margin-bottom: 20px;
+    height: auto;
+    display: block;
+  }
+
+  .worlds p
+  {
+    display: block;
+  }
+
+  .figs p
+  {
+    display: block;
+  }
 }
 
 @media screen and (max-width: 425px)
 {
+  /* IDEA: Style pourl'aumentation de la taille des textes pour les smartphone */
+  #droite
+  {
+    width: 20vw;
+  }
+
+  span
+  {
+    font-size: 3vw;
+  }
+
+  h3
+  {
+    font-size: 6vw;
+  }
+
+  #gauche
+  {
+    width: 20vw;
+  }
+
+  .button img
+  {
+    width: 4vw;
+  }
+
   blockquote
   {
     font-size: 10vw;
   }
 
+  #subbutton
+  {
+    width: 20vw;
+  }
+
   blockquote footer
   {
     font-size: 6vw;
+  }
+
+  footer
+  {
+    font-size: 3vw;
+  }
+
+  p
+  {
+    font-size: 4vw;
+  }
+
+  figcaption
+  {
+    font-size: 3vw;
+  }
+
+  h1
+  {
+    font-size: 10vw;
+  }
+
+  .jacket
+  {
+    height: 25vh;
+  }
+
+  #main
+  {
+    font-size: 14vw;
+  }
+
+  form
+  {
+    font-size: 3vw;
   }
 }

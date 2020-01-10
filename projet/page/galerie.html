@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang=fr>
+<head>
+  <title>Kingdom Hearts: Galerie</title>
+  <meta charset=utf-8>
+  <meta name=author content="Edouard Bergé">
+  <meta name=description content="Site sur la sage de jeux vidéos Kingdom Hearts">
+  <meta name=keywords content="Kingdom, Hearts, jeux, vidéo, sora">
+  <meta name=viewport content=width=device-width,initial-scale=1,height=device-height>
+  <link rel=stylesheet href=../style/stylemenu.css>
+  <link rel=stylesheet href=../style/style.css>
+  <link rel=icon href=../img/fav.ico>
+  <script type="text/javascript" src=../script/galerie.js></script>
+</head>
+<body>
+  <div id=container>
+    <header>
+			<img id=logo src=../img/rawlogo.png alt="Logo du site: Logo de Kingdom Hearts 3">
+			<nav id=do>
+				<div id=mo1>
+					<div id=mo2>
+						<div id=mf1>
+							<div id=mf2>
+								<div id=df>
+									<img src=../img/burger.png alt="Icône burger menu" id=burger>
+									<a href=#do id=lo><div id=dlo></div></a>
+									<a href=#df id=lf><div id=dlf></div></a>
+									<div class=menubutton id=menubutton1>
+										<a href=#mo1  id=hidden2>La saga</a>
+										<a href=#mf1  id=hidden1>La saga</a>
+										<div class=submenucontainer id=submenucontainer1>
+											<div>
+												<a href=synopsis.html>Synopsis</a>
+											</div>
+											<div>
+												<a href=personnage.html>Personnages</a>
+											</div>
+											<div>
+												<a href=bestiaire.html>Bestiaire</a>
+											</div>
+											<div>
+												<a href=mondes.html>Mondes Disney</a>
+											</div>
+										</div>
+									</div>
+									<div class=menubutton>
+										<a href=studio.html >Les studios</a>
+									</div>
+									<div class=menubutton>
+										<a href=produits.html >Produits dérivés</a>
+									</div>
+									<div class=menubutton id=menubutton2>
+										<a href=#mo2 id=hidden4>Services</a>
+										<a href=#mf2 id=hidden3>Services</a>
+										<div class=submenucontainer id=submenucontainer2>
+											<div>
+												<a href=galerie.html>Galerie</a>
+											</div>
+											<div>
+												<a href=quiz.html>Quizz</a>
+											</div>
+											<div>
+												<a href=contact.html>Nous contacter</a>
+											</div>
+											<div>
+												<a href=credits.html>Crédits</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</nav>
+		</header>
+    <!-- IDEA: Page de la galerie, la page contient la div pour stocker les boutons générés avec javascript, elle contient aussi une image permettant de ne pas rien afficher pendant le chargement du javascript -->
+    <h1 id=main>Galerie</h1>
+    <div id=galerie>
+      <!-- IDEA: Image d'affichage de la premiere photo puis des autres par un script javascript -->
+      <img id=image src=../galerie/1.jpg alt="Image du jeu Kingdom Hearts">
+      <!-- IDEA: Fléche de droite et de gauche de la galerie -->
+      <button class=advance type=button id=right><img id=droite src=../img/droite.png alt="Fléche pour avancer les images vers la droite"></button>
+      <button class=advance type=button id=left><img id=gauche src=../img/gauche.png alt="Fléche pour avancer les images vers la gauche"></button>
+      <!-- IDEA: On va mettre les boutons ici -->
+      <div id=buttons>
+
+      </div>
+    </div>
+    <footer>
+      <h6 id=contact><a href=contact.html>Contacts</a></h6>
+      <h6 id=auteur><a href=credits.html>Auteur et copyright</a></h6>
+      <h6 id=retour><a href=#container><img src=../img/arrow.png alt="Fléche de retour vers le haut"></a></h6>
+    </footer>
+  </div>
+</body>
+</html>

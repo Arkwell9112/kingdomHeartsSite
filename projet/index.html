@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang=fr>
 <head>
-	<title>Kingdom Hearts</title>
+	<!-- IDEA: Balises pour les metas, style et script -->
+	<title>Kingdom Hearts: Accueil</title>
 	<meta charset=utf-8>
 	<meta name=author content="Edouard Bergé">
 	<meta name=description content="Site sur la sage de jeux vidéos Kingdom Hearts">
 	<meta name=keywords content="Kingdom, Hearts, jeux, vidéo, sora">
-	<meta name=viewport content=width=device-width,initial-scale=1>
+	<meta name=viewport content=width=device-width,initial-scale=1,height=device-height>
 	<link rel=stylesheet href=style/stylemenu.css>
 	<link rel=stylesheet href=style/style.css>
+	<link rel=icon href=img/fav.ico>
 </head>
 <body>
 	<div id=container>
+		<!-- IDEA: Le Header contient le logo et les divs et organisations pourle menu dans toutes ses formes -->
 		<header>
 			<img id=logo src=img/rawlogo.png alt="Logo du site: Logo de Kingdom Hearts 3">
 			<nav id=do>
@@ -28,10 +31,10 @@
 										<a href=#mf1  id=hidden1>La saga</a>
 										<div class=submenucontainer id=submenucontainer1>
 											<div>
-												<a href=page/saga.html>Synopsis</a>
+												<a href=page/synopsis.html>Synopsis</a>
 											</div>
 											<div>
-												<a href=page/personnages.html>Personnages</a>
+												<a href=page/personnage.html>Personnages</a>
 											</div>
 											<div>
 												<a href=page/bestiaire.html>Bestiaire</a>
@@ -42,7 +45,7 @@
 										</div>
 									</div>
 									<div class=menubutton>
-										<a href=page/studios.html >Les studios</a>
+										<a href=page/studio.html >Les studios</a>
 									</div>
 									<div class=menubutton>
 										<a href=page/produits.html >Produits dérivés</a>
@@ -52,10 +55,10 @@
 										<a href=#mf2 id=hidden3>Services</a>
 										<div class=submenucontainer id=submenucontainer2>
 											<div>
-												<a href=page/gallerie.html>Gallerie</a>
+												<a href=page/galerie.html>Galerie</a>
 											</div>
 											<div>
-												<a href=page/quizz.html>Quizz</a>
+												<a href=page/quiz.html>Quizz</a>
 											</div>
 											<div>
 												<a href=page/contact.html>Nous contacter</a>
@@ -72,14 +75,31 @@
 				</div>
 			</nav>
 		</header>
-
+		<h1 id=main>Bienvenu dans l'univers de Kingdom Hearts !!</h1>
+		<!-- IDEA: Intégration Youtube -->
 		<iframe src="https://www.youtube.com/embed/zrunNL3xsUY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<!-- IDEA: Une citation -->
 		<blockquote>
 			Depuis peu, je fais des reves etranges...
 			<footer>
 				"Sora"
 			</footer>
 		</blockquote>
+		<hr>
+		<h1>Introduction</h1>
+		<p>
+			Kingdom Hearts (キングダム ハーツ, Kingudamu Hātsu?) est une série de jeux vidéo d'action-RPG développée et éditée par Square Enix, qui marque l'association entre Disney Interactive Studios et l'univers des jeux de Square sous la direction de Tetsuya Nomura. Kingdom Hearts est donc un crossover entre plusieurs personnages de Square et l'univers Disney qui a lieu dans un monde parallèle créé spécialement pour la série. Dans chacun des opus, les voix des personnages de Disney sont interprétées par les mêmes célébrités que dans leur œuvre d'origine.<br><br>
+
+			Les personnages de la franchise de Square Enix Final Fantasy font eux aussi des apparitions et interagissent avec le joueur et avec les personnages de Disney. La série tourne autour de la recherche des amis de Sora, le personnage principal, et de ses rencontres avec les personnages de Disney et de Final Fantasy au travers de différents mondes.<br><br>
+
+			En 2019, la série compte douze épisodes sortis sur différentes consoles de jeux vidéo. Même si chaque titre ne reçoit pas le même succès, la plupart des jeux de la série sont acclamés par les critiques et reçoivent un important succès commercial. En date du 9 novembre 2013, la série Kingdom Hearts s'est vendue à plus de 20 millions d'exemplaires à travers le monde1. Une grande variété de produits dérivés est sortie comprenant les bandes originales, des figurines, guides de jeux, romans et une série en manga.<br><br>
+		</p>
+		<!-- IDEA: Le footer -->
+		<footer>
+			<h6 id=contact><a href=page/contact.html>Contacts</a></h6>
+			<h6 id=auteur><a href=page/credits.html>Auteur et copyright</a></h6>
+			<h6 id=retour><a href=#container><img src=img/arrow.png alt="Fléche de retour vers le haut"></a></h6>
+		</footer>
 	</div>
 </body>
 </html>

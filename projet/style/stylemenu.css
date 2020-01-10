@@ -1,5 +1,7 @@
 @charset "utf-8"
 
+/* IDEA: Style CSS par Edouard Bergé */
+
 html
 {
 	margin: 0px;
@@ -7,6 +9,7 @@ html
 	box-sizing: border-box;
 }
 
+/* IDEA: On définit les éléments de base pourle header */
 body
 {
 	margin: 0px;
@@ -50,6 +53,7 @@ a:hover
 	height: 10vh;
 }
 
+/* IDEA: On définit les div à ne pas afficher dans l'état de base du menu */
 #dlf
 {
 	display: none;
@@ -77,6 +81,7 @@ a:hover
 	display: block;
 }
 
+/* IDEA: On définit les styles pour les boutons du menu */
 nav
 {
 	margin: 0px;
@@ -116,19 +121,24 @@ nav
 	background-color: black;
 }
 
-@media screen and (min-width: 1280px)
+@media screen and (min-width: 768px)
 {
+
+	/* IDEA: Si il s'agit d'une taille de type Desktop on affihce un menu horizontal sui se déroule au hover */
 	.menubutton:hover .submenucontainer
 	{
 		height: 21vh;
 	}
 }
 
-@media screen and (min-width: 426px) and (max-width: 1279px)
+@media screen and (min-width: 426px) and (max-width: 767px)
 {
+
+	/* IDEA: Si il s'agit d'une taille de type tablette on affiche un menu horizontal où il faut cliquer pour créer et mainteneir le déroulement */
+	/* IDEA: Code permettant d'afficher la menu déroulant */
 	#mo1:target #submenucontainer1
 	{
-		height: 21vh;
+		height: 21.5vh;
 	}
 
 	#mo1:target #hidden1
@@ -141,14 +151,16 @@ nav
 		display: none;
 	}
 
+	/* IDEA: Code permettant de cacher le menu déroulant */
 	#mf1:target #submenucontainer1
 	{
 		height: 0px;
 	}
 
+	/* IDEA: Idem pour le second manu déroulant */
 	#mo2:target #submenucontainer2
 	{
-		height: 21vh;
+		height: 21.5vh;
 	}
 
 	#mo2:target #hidden3
@@ -169,6 +181,8 @@ nav
 
 @media screen and (max-width: 425px)
 {
+
+	/* IDEA: Si il s'agit d'une taille de type Smartphone on affiche un menu burger avec des tailles de boutons redéfinis */
 	.submenucontainer
 	{
 		overflow: hidden;
@@ -177,6 +191,7 @@ nav
 		box-sizing: border-box;
 		transition: height linear 0.2s;
 		background-color: black;
+		z-index: 3;
 	}
 
 	header
@@ -231,6 +246,7 @@ nav
 		display: none;
 	}
 
+	/* IDEA: On ouvre le menu burger */
 	#do:target #df
 	{
 		right: 0px;
@@ -246,6 +262,7 @@ nav
 		display: block;
 	}
 
+	/* IDEA: On ferme le menu burger */
 	#df:target
 	{
 		right: -50%;
@@ -261,6 +278,7 @@ nav
 		display: none;
 	}
 
+	/* IDEA: Code permettant d'ouvrir le menu déroulant mais en maintenant la menu burger ouvert */
 	#mo1:target #df
 	{
 		right: 0px;
@@ -296,6 +314,7 @@ nav
 		display: none;
 	}
 
+	/* IDEA: Code permettant de fermer le menu déroulant mais en maintenant toujours le menu burger ouvert */
 	#mf1:target #df
 	{
 		right: 0px;
@@ -321,6 +340,7 @@ nav
 		height: 4vh;
 	}
 
+	/* IDEA: Idem pour le second menu déroulant */
 	#mo2:target #df
 	{
 		right: 0px;
@@ -381,11 +401,17 @@ nav
 		height: 4vh;
 	}
 
+	/* IDEA: position fixed pour éviter le retour en haut quand target pour l'ouverture du menu burger */
 	nav
 	{
 		height: auto;
+		position: fixed;
+		top: 0px;
+		right: 0px;
+		z-index: 3;
 	}
 
+	/* IDEA: On affiche les boutons en colonne et non plus en ligne */
 	.menubutton
 	{
 		float: none;

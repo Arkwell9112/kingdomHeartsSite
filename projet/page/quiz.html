@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang=fr>
+<head>
+  <title>Kingdom Hearts: Quiz</title>
+  <meta charset=utf-8>
+  <meta name=author content="Edouard Bergé">
+  <meta name=description content="Site sur la sage de jeux vidéos Kingdom Hearts">
+  <meta name=keywords content="Kingdom, Hearts, jeux, vidéo, sora">
+  <meta name=viewport content=width=device-width,initial-scale=1,height=device-height>
+  <link rel=stylesheet href=../style/stylemenu.css>
+  <link rel=stylesheet href=../style/style.css>
+  <link rel=icon href=../img/fav.ico>
+  <script type="text/javascript" src=../script/quiz.js></script>
+</head>
+<body>
+  <div id=container>
+    <header>
+			<img id=logo src=../img/rawlogo.png alt="Logo du site: Logo de Kingdom Hearts 3">
+			<nav id=do>
+				<div id=mo1>
+					<div id=mo2>
+						<div id=mf1>
+							<div id=mf2>
+								<div id=df>
+									<img src=../img/burger.png alt="Icône burger menu" id=burger>
+									<a href=#do id=lo><div id=dlo></div></a>
+									<a href=#df id=lf><div id=dlf></div></a>
+									<div class=menubutton id=menubutton1>
+										<a href=#mo1  id=hidden2>La saga</a>
+										<a href=#mf1  id=hidden1>La saga</a>
+										<div class=submenucontainer id=submenucontainer1>
+											<div>
+												<a href=synopsis.html>Synopsis</a>
+											</div>
+											<div>
+												<a href=personnage.html>Personnages</a>
+											</div>
+											<div>
+												<a href=bestiaire.html>Bestiaire</a>
+											</div>
+											<div>
+												<a href=mondes.html>Mondes Disney</a>
+											</div>
+										</div>
+									</div>
+									<div class=menubutton>
+										<a href=studio.html >Les studios</a>
+									</div>
+									<div class=menubutton>
+										<a href=produits.html >Produits dérivés</a>
+									</div>
+									<div class=menubutton id=menubutton2>
+										<a href=#mo2 id=hidden4>Services</a>
+										<a href=#mf2 id=hidden3>Services</a>
+										<div class=submenucontainer id=submenucontainer2>
+											<div>
+												<a href=galerie.html>Galerie</a>
+											</div>
+											<div>
+												<a href=quiz.html>Quizz</a>
+											</div>
+											<div>
+												<a href=contact.html>Nous contacter</a>
+											</div>
+											<div>
+												<a href=credits.html>Crédits</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</nav>
+		</header>
+    <h1 id=main>Quiz</h1>
+    <!-- IDEA: Cette page contient le quizz du site et par conséquent le formulaire qui permet de récupérer les informations de l'utilisateur -->
+    <!-- IDEA: Ces informations sont ensuites récupérées par le script javascript attaché quand on clique sur le bouton répondre -->
+    <!-- IDEA: un EventListener de click est attaché à ce boutons pour permettre de propager l'event vers le js -->
+    <form>
+      <fieldset>
+        <legend>Question 1</legend>
+        <label for=principal>Entrez le nom du personnage principal des jeux Kingdom Hearts:</label><br><br>
+        <input type="text" name=principal>
+      </fieldset><br>
+
+      <fieldset>
+        <legend>Question 2</legend>
+        <label for=monstres>Cochez les deux types de sans-coeurs qui existent dans l'univers de Kingdom Hearts:</label><br><br>
+        <label for=monstres class=tick>Matrice</label>
+        <input type=checkbox name=monstres value=matrice>
+        <label for=monstres class=tick>Emblême</label>
+        <input type=checkbox name=monstres value=embleme>
+        <label for=monstres class=tick>Ténébre</label>
+        <input type=checkbox name=monstres value=tenebre>
+        <label for=monstres class=tick>Lumière</label>
+        <input type=checkbox name=monstres value=lumiere>
+      </fieldset><br>
+
+      <fieldset>
+        <legend>Question 3</legend>
+        <label for=acco>Quels sont les noms des deux accolytes du personnage principal de Kingdom Hearts ?</label><br><br>
+        <label for=acco class=tick>Roxas</label>
+        <input type=checkbox name=acco value=roxas>
+        <label for=acco class=tick>Dingo</label>
+        <input type=checkbox name=acco value=dingo>
+        <label for=acco class=tick>Zero</label>
+        <input type=checkbox name=acco value=zero>
+        <label for=acco class=tick>Donald</label>
+        <input type=checkbox name=acco value=donald>
+      </fieldset><br>
+
+      <fieldset>
+        <legend>Question 4</legend>
+        <label for=simili>Qu'est ce qu'un simili ?</label><br><br>
+        <label for=simili class=tick>Un monstre !</label>
+        <input type=radio name=simili value=monstre>
+        <label for=simili class=tick>Un corps qui a perdu son âme</label>
+        <input type=radio name=simili value=ame>
+        <label for=simili class=tick>Un jouet</label>
+        <input type=radio name=simili value=jouet>
+        <label for=simili class=tick>Rien du tout</label>
+        <input type=radio name=simili value=rien>
+      </fieldset><br>
+
+      <fieldset>
+        <legend>Question 5</legend>
+        <label for=perso>Combien de personnages principaux sont-ils présentés sur ce site ?</label><br><br>
+        <input type="text" name=perso>
+      </fieldset><br>
+
+      <fieldset>
+        <legend>Question 6</legend>
+        <label for=studio>Quels sont les deux studios qui ont participé au déveleppoment des jeux Kingdom Hearts ?</label><br><br>
+        <label for=studio class=tick>Disney Interactive et Nintendo</label>
+        <input type=radio name=studio value=nintendo>
+        <label for=studio class=tick>Square Enix et Eidos montréal</label>
+        <input type=radio name=studio value=eidos>
+        <label for=studio class=tick>Disney Interactive et Square Enix</label>
+        <input type=radio name=studio value=enix>
+        <label for=studio class=tick>Studio Mickey et Square Soft</label>
+        <input type=radio name=studio value=mickey>
+      </fieldset><br>
+
+      <fieldset>
+        <legend>Question 7</legend>
+        <label for=createur>Quel est le nom de famille du créateur de Kingdom Hearts ?</label><br><br>
+        <input type="text" name=createur>
+      </fieldset><br>
+
+      <fieldset>
+        <legend>Question 8</legend>
+        <label for=mouse>A partir de quel jeux Kingdom Hearts Mickey Mouse devient-il un personnae principal ?</label><br><br>
+        <label for=mouse class=tick>Kingdom Hearts 1</label>
+        <input type=radio name=mouse value=1>
+        <label for=mouse class=tick>Kingdom Hearts 2</label>
+        <input type=radio name=mouse value=2>
+        <label for=mouse class=tick>Kingdom Hearts 3</label>
+        <input type=radio name=mouse value=3>
+      </fieldset><br>
+
+      <fieldset>
+        <legend>Question 9</legend>
+        <label for=organisation>Quel est le nombre contenu dans le nom de l'organisation des similis ?</label><br><br>
+        <input type="text" name=organisation>
+      </fieldset><br>
+
+      <fieldset>
+        <legend>Question 10</legend>
+        <label for=note>Avez vous apprécié ce site ?</label><br><br>
+        <label for=note class=tick>Oui</label>
+        <input type=radio name=note value=oui>
+        <label for=note class=tick>Non</label>
+        <input type=radio name=note value=non>
+      </fieldset><br>
+
+      <!-- IDEA: on a ici la balise dont l'innerHTML est modifié en fonction du résultat au quizz -->
+      <!-- IDEA: Il faut donc bien se concentrer avant de répondre -->
+      <!-- IDEA: Un indice est à la clé -->
+      <p id=result>
+
+      </p>
+
+      <button type="button" id=subbutton>Répondre</button>
+    </form>
+    <footer>
+      <h6 id=contact><a href=contact.html>Contacts</a></h6>
+      <h6 id=auteur><a href=credits.html>Auteur et copyright</a></h6>
+      <h6 id=retour><a href=#container><img src=../img/arrow.png alt="Fléche de retour vers le haut"></a></h6>
+    </footer>
+  </div>
+</body>
+</html>
